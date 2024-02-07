@@ -28,7 +28,12 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    - run: npm i markdown-to-html-cli -g
+    - run: markdown-to-html --output index.html
+    - run: markdown-to-html --source notes.md --output index.html
+
     steps:
+
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
