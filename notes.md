@@ -188,10 +188,129 @@ au niveau du firewall).
 
 ### Administration du firewall
 
-on peut modifier la certificat SSl de l'interface de configuration.
+- on peut modifier la certificat SSl de l'interface de configuration.
 
-on peut modifier le port par défaut (443/TCP).
-*
+- on peut modifier le port par défaut (443/TCP).
+
+- on peut configurer le delai max d'inactivité
+
+- on peut activier la defence contre l'attaque bruteforce contre l'interface administrateur.
+
+- on peut limité l'acces à l'interface d'administration à une machine ou un réseau spécifique.
+
+- use the nsrpc shell for administrators other than the admin account : dans le cas ou on a un annuaire dans le réseau, on peut donner au utilisateurs le droits d'acces à la console en SSH.
+
+### Parametre réseau
+
+IPV6 est désactivé par défault, on cas d'activation seul un `reset` peut l'enlever.
+
+## Modification du mot de passe du compte <<admin>>
+
+> CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs, un minimum 5 caractère et doit respecter la politique de mot de passe définie dans le ,enu de CONFIGURATION
+
+les button exporter la clé publique et la clé privé du compte admin permettent de se conencter en SSH au firewall.
+
+## License
+
+> CONFIGURATION ⇒ SYSTÈME ⇒ Licence 
+
+la license par défaut est valide pour 3 mois seulement.
+
+il faut installer une license depous l'espace privé StormShield.
+
+## Maintenance
+
+> CONFIGURATION ⇒ SYSTÈME ⇒ Maintenance
+
+### 1 - Mise à jour le système
+
+il faut installer le ficher `.maj` / appuier sur recherche des nv maj
+
+![maj ecrase ancien version ](image-4.png)
+
+### 2 - Sauvegarde
+
+récuperer un ficher de sauvegarde de l'état du firewall `.na`.
+
+les élements sauvegardé : 
+- Réseau (interface, routage et DNS dynamique),
+- Filtrage SMTP,
+- Filtrage URL,
+- Filtrage SSL,
+- Objets web,
+- Modules globaux,
+- Configuration sécurisée,
+- Active Update,
+- Services (SNMP, serveur DHCP),
+- Profils d'inspection IPS,
+- Objets réseaux,
+- Filtrage et NAT,
+- VPN IPSec,
+- Annuaire LDAP.
+
+un sauvegarde partiel ne peux se faire qu'avec la ligne de commande.
+
+le fichier de sauvegarde peut etre securisé par un MDP.
+
+#### Sauvegarde automatique
+
+- Cloud backup : géré par StormShield, le sauvegarde peut se faire chaque jour, chaque semaine, chaque mois
+
+- Serveur Personnalisé : 
+    * on peut configurer le port du serveur.
+    * le protocol de communication.
+    * Certificat de serveur.
+    ...
+
+### 3 - Restaurer 
+
+se fait avec le fichier `.na`
+
+on peut réstaurer le tout ou les parties qui nous intéressent :
+
+> configuration avancée => sélectioner le ou les modules nécessaires => redémarage du firewall
+
+on peut faire aussi le sauvegarde à partir de la dernière sauvegarde automatique dont la date est indiquée.
+
+### 4 - Configuration
+
+> UTM:  Unified Threat Management, refers to a comprehensive security solution that integrates multiple security features and functions into a single platform.
+
+![maintenance configuration](image-5.png)
+
+l'administrateur peut sélectionner la partition qui deviendra active au prochain
+démarrage du firewall (principale ou de secours). Automatiquement l’autƌe partition
+deviendra la partition passive.
+Le bouton « sauvegarder la partition active » permet de copier tout le contenu de la
+partition active (configuration + firmware) sur la partition passive.
+
+> CONFIGURATION ⇒ SYSTÈME ⇒ Active Update
+
+permet le controle des mise a jour automatique des modules : Antispams, IPS, Antivirus...
+
+on peut aussi modifier les listes des serveurs de mise a jour. (configration avancée). 
+
+le protocol utilisé pour la maj est soir HTTP ou HTTPs, en cas de l'HTTPS, il faut ajouter la CA du serveur pour pouvoir valider le certificat présenté.
+
+> Serveur NTP : serveur de temps, network time protocol.
+
+le serveur SSH se fait avec le compte admin par défaut et peut étre octroyé a des administrateurs supplémentaire.
+
+## Quiz
+
+Q1 - A
+Q2 - A
+Q3 - D
+
+## Traces et supervision
+
+### Catégories des traces
+
+
+
+
+
+
 
 
 
