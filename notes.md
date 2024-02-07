@@ -124,6 +124,85 @@ pour le documentation : ` https://documentation.stormshield.eu`.
 
 pour la knowledge base : ` https://kb.stormshield.eu`.
 
+## Les composants du firewall StormShield
+
+![alt text](image.png)
+
+- Button démarage/arret
+
+- Trois LED :
+    * orange : firewall sous tension
+    * verte : systeme d'exploitation du firewall est fonctionnel
+    * verte : firewall a fini de démarrer et qu'il est fonctionnel.
+- Post clavier PS2 + VGA/HDMI
+
+> carte mémoire doit etre au minimum de class 10.
+
+Le démarage/arret du firewall se fais en cliquant sur le button de démarage/arret.
+
+Maintenir sur le button Rest pour 10s pour le reset.
+
+## Configurer le firewall
+
+![configuration du firewall](image-1.png)
+
+> A partir de l'interface (0,0) aka top left, la premiere interface s'appelle OUT, le deuxieme IN, la troisieme DMZ1 -> DMZn
+
+L'interface OUT est une inteface externe utilisé pour se connecté à l'internet.
+
+les autres sont internes et servent principalement à connecter le firewall à des réseau locaux.
+
+### le bridging:
+
+Routing allows multiple networks to communicate independently and yet remain separate, whereas bridging connects two separate networks as if they were a single network.
+
+![](image-2.png)
+
+> le bridge à une adresse IP 10.0.0.254/8 + il contient un serveur DHCP, il distribue des adresse comprisent entre 10.0.0.10 - 10.0.0.100
+
+la connection vers l'interface graphique d'administrqtion est `https://10.0.0.254/admin`
+
+par default : 
+    - login : **admin**
+    - password : **admin**
+
+## L'interface d'administration
+
+![Interface ](image-3.png)
+
+## Confirguration Système
+
+Accessible par : CONFIGURATION -> SYSTEME -> Configuration.
+
+### Configuration générale
+
+- Les paramètres cryptographiques regroupent deux options qui sont
+respectivement en relation avec les certificats (présentés dans la formation
+Expert) et le mode « ANSSI Diffusion Restreinte (DR) ».
+
+La politique de mots de passe définit la longueur minimale et les caractères
+obligatoires des mots de passe créés dans les différents menus du firewall (par
+exemple : mots de passe des utilisateurs dans l’aŶŶuaiƌe interne (LDAP), mots de
+passe qui protègent les fichiers de sauvegarde, mots de passe des certificats créés
+au niveau du firewall).
+
+### Administration du firewall
+
+on peut modifier la certificat SSl de l'interface de configuration.
+
+on peut modifier le port par défaut (443/TCP).
+*
+
+
+
+
+
+
+ 
+
+
+
+
 
 
 
