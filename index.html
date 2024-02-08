@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head>
-      <title>notes</title>
+      <title>index</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
@@ -255,9 +255,13 @@ au niveau du firewall).</p>
 <p>IPV6 est désactivé par défault, on cas d'activation seul un <code>reset</code> peut l'enlever.</p>
 <h2 id="modification-du-mot-de-passe-du-compte-admin">Modification du mot de passe du compte &lt;<admin>&gt; </admin></h2>
 <blockquote>
-<p>CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs, un minimum 5 caractère et doit respecter la politique de mot de passe définie dans le ,enu de CONFIGURATION</p>
+<p>CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs =&gt; Administrator account, un minimum 5 caractère et doit respecter la politique de mot de passe définie dans le menu de CONFIGURATION</p>
 </blockquote>
 <p>les button exporter la clé publique et la clé privé du compte admin permettent de se conencter en SSH au firewall.</p>
+<p>il faut avant activer le ssh :</p>
+<blockquote>
+<p>CONFIGURATION ⇒ SYSTÈME ⇒ Configuration =&gt; ADMINISTRATION DU FIREWALL</p>
+</blockquote>
 <h2 id="license">License </h2>
 <blockquote>
 <p>CONFIGURATION ⇒ SYSTÈME ⇒ Licence</p>
@@ -442,6 +446,38 @@ réel organisés en 12 sous-menus</p>
 <h3 id="lab----présentation-de-la-plateforme-de-lab">LAB -  Présentation de la plateforme de Lab </h3>
 <p><img src="image-7.png" alt="alt text"></p>
 <p><img src="image-8.png" alt="alt text"></p>
+<h3 id="lab---prise-en-main-du-firewall-et-traces">LAB - Prise en main du Firewall et traces </h3>
+<p>1 - Connectez-vous à l’i'terface d’administration web (les firewalls « Trainee » sont<br>
+en configuration usine).</p>
+<p><img src="image-9.png" alt="alt text"></p>
+<p>2 - Modifiez vos préférences pour ne jamais être déconnecté en cas d'inactivité<br>
+sur l’interface d'administration. Les préférences se trouvent dans le menu<br>
+déroulant, accessible en cliquant sur la flèche à droite du nom d’utilisateur, en<br>
+haut à droite de l’en-tête.</p>
+<p><img src="image-10.png" alt="alt text"></p>
+<p>3 - Paramétrez la langue (traces et clavier) et le fuseau horaire de votre firewall.<br>
+Redémarrez le firewall pour que le nouveau fuseau soit pris en compte (icône<br>
+en haute à droite). Puis mettez votre firewall à l’heure après le redémarrage</p>
+<p><img src="image-12.png" alt="alt text"></p>
+<p>4 - Activez le service SSH avec l'authentification par mot de passe</p>
+<p><img src="image-13.png" alt="alt text"></p>
+<p><code>ssh -i /home/user/Downloads/VMSNSX09K0639A9-privateKey admin@10.0.0.254</code></p>
+<p>5 - Vérifiez la validité de votre licence et des éventuelles options disponibles,<br>
+configurez la mise à jour automatique de votre licence avec une vérification<br>
+hebdomadaire dans les options avancées</p>
+<p><img src="image-14.png" alt="alt text"></p>
+<p>6 - Modifiez le mot de passe de l’utilisateur « admin » (il faut choisir un mot de<br>
+passe d’au moins 8 caractères, sans caractère spécial). Rafraîchissez la page<br>
+pour vous reconnecter et tester le nouveau mot de passe.</p>
+<p><img src="image-15.png" alt="alt text"></p>
+<p>7 - Vérifiez que le stockage local des logs est activé sur le disque dur de la VM.<br>
+Réallouez le quota d’espace disque de la catégorie « Proxy POP3 » à la<br>
+catégorie « Connexions réseau », puis la désactiver. Activez tous les autres logs.</p>
+<p><img src="image-16.png" alt="alt text"></p>
+<p>8 - Faites une sauvegarde de la configuration et téléchargez-la sur le poste<br>
+d’administration. Prenez l’haďitude de sauvegarder la configuration à la fin de<br>
+chaque lab</p>
+<p><img src="image-17.png" alt="alt text"></p>
 
       </div>
       
