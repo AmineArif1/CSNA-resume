@@ -306,10 +306,103 @@ Q3 - D
 
 ### Catégories des traces
 
+- Administration
+- Authentification
+- Connexions réseaux
+- Evènements systèmes
+- Alarmes : IPS + filtrage NAT
+- Proxy HTTP : 
+- Connexion applicatives
+- Proxy SMTP
+- Politque de filtrage
+- VPN IPSec
+- VPN SSL
+- Proxy POP3
+- Statistiques
+- Management de vulnérabilité
+- Proxy FTP
+- Proxy SSL
+- Sandboxing :  refers to a security mechanism used in computing and software development to isolate programs, processes, or applications from the rest of the system.
 
+### Configuration et visualisation des traces
 
+#### Configuration du stockage local
 
+> CONFIGURATION ⇒ NOTIFICATIONS ⇒ Traces - Syslog - IPFIX ⇒ dans l’onglet STOCKAGE LOCAL .
 
+#### Visualisation des traces
+
+pour visualiser les traces : 
+
+> Le menu JOURNAUX D’AUDIT dans la section SUPERVISION
+
+#### Filtre de recherche simple
+
+Un champ de recherche simple permet de filtrer les traces en recherchant une
+chaîne de caractères dans toutes les colonnes de toutes les traces
+
+#### Recherche avancé
+
+La recherche avancée permet de créer des filtres complexes en combinant plusieurs
+critères de sélection.
+
+![alt text](image-6.png)
+
+#### Limiter Acces aux traces
+
+l’accès
+aux traces des firewalls SNS est restreint par défaut pour tous les administrateurs.
+
+Le super administrateur « admin », ainsi que les administrateurs disposant du droit
+« Accès aux données personnelles » peuvent accéder aux traces complètes en
+cliquant simplement sur Traces : accès restreint..
+
+#### Création des codes d'accès temporaires pour un accès complet au traces
+un administrateur n'ayant pas le droit << Acces aux données personnelles >> peut avoir un accès complet, grâce à un code d'accès temporaire, généré par un autre administrateur ayant le droit << Gestion des accès aux données personnelles >>
+
+> La création d’un code d’accès temporaire s’effectue dans le menu CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs ⇒ onglet GESTION DES TICKETS
+
+### Supervison et graphique d'historiques
+
+#### Graphiques et données en temps réel
+
+Le menu SUPERVISION permet de visualiser des graphiques et des données en temps
+réel organisés en 12 sous-menus
+
+- Matériel/Haute disponibilité : Température de la CPU..
+- Système: Utilisation des ressources systèmes du firewall.
+
+...
+
+- Tunnels IPSec VPN : Tunnels conformes à la politique du firewall,
+- Liste noire/Liste blanche : Hôtes en quarantaine ou liste blanche sur le firewall.
+
+#### Consulter les graphique d'historique
+button doit etre ON dans
+>> CONFIGURATION ⇒ NOTIFICATIONS ⇒ Configuration des rapports. 
+
+#### Configuration de la supervision
+
+>> CONFIGURATION ⇒ NOTIFICATIONS ⇒ Configuration de la supervision.
+
+par exemple : 
+- intervale de rafraichissement.
+- Configuration des interfaces.
+- Configuration de la QOS
+
+### Notification et Rapports Supplémentaire
+
+- SYSLOG : Envoie de traces vers des serveurs SYSLOG (Jusqu'a 4 serveur + 1 serveur de secours pour chaqu'un d'entre eu).
+
+- SLS (StormShield Log Supervisor) : Solution de gestion de traces (SIEM). Elle collecte et analyse les données qui provionne des firewalls.
+
+> SIEM : Security Information and Event Management
+
+- Notifications par mails
+
+- Rapports
+
+### LAB -  Présentation de la plateforme de Lab
 
 
 
