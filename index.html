@@ -1,1 +1,456 @@
-hello there
+<!DOCTYPE html><html><head>
+      <title>notes</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\elarif\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.11\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="stormshield">StormShield </h1>
+<h2 id="i---firewalls">I - Firewalls </h2>
+<h3 id="petite-entreprise">Petite Entreprise </h3>
+<ul>
+<li>
+<p>SN160(w)</p>
+</li>
+<li>
+<p>SN210(w)</p>
+</li>
+<li>
+<p>SN310</p>
+</li>
+</ul>
+<h3 id="moyenne-entreprise">Moyenne Entreprise </h3>
+<ul>
+<li>
+<p>SN510</p>
+</li>
+<li>
+<p>SN-M-SERIES-720</p>
+</li>
+<li>
+<p>SN-M-SERIES-920</p>
+</li>
+</ul>
+<h3 id="grand-comptes">Grand-comptes </h3>
+<ul>
+<li>
+<p>SN1100</p>
+</li>
+<li>
+<p>SN2100</p>
+</li>
+<li>
+<p>SN3100</p>
+</li>
+<li>
+<p>SN6100</p>
+</li>
+</ul>
+<h3 id="industrie">Industrie </h3>
+<ul>
+<li>SNi20 &amp; SNi40</li>
+</ul>
+<p>Utilisation des protocols industriels (Profinet, Modbus..).</p>
+<p>Rupture Tolerant (Rigide, electricity independent).</p>
+<ul>
+<li>SNxr1200</li>
+</ul>
+<p>Résistance à condition extemes (température -40 -&gt; 55 , haute pression)</p>
+<p>Respet standard militaire.</p>
+<h3 id="appliances-virtuelle">Appliances Virtuelle </h3>
+<ul>
+<li>Elastic Virtual Appliance</li>
+</ul>
+<p>s'intégre dans l'hypervideur.</p>
+<p>peut etre hebergé aussi dans les services cloud (microsoft Azure, AWS)</p>
+<blockquote>
+<p>les versions avec LTSB means supported for the long term.</p>
+</blockquote>
+<h2 id="administration-centralisé">Administration centralisé </h2>
+<ul>
+<li>Stormshield Management Center (SMC)</li>
+</ul>
+<p>Permet l'administration d'un parc complet de Firewalls StormShield.</p>
+<p>Permet le deploiement des scripts, vpn sec, objets globaux, filtrage, surveillance des firewalls (licenses, ressources..).</p>
+<h2 id="fonctions-standard">Fonctions standard </h2>
+<ul>
+<li>
+<p>IPS : Intrusion prevention system</p>
+</li>
+<li>
+<p>Signature contextuelles IPS : Une base de signatures d'attaque utilisé avec IPS pour renforcer les sécurité</p>
+</li>
+<li>
+<p>Antispam</p>
+</li>
+<li>
+<p>Antivirus standard</p>
+</li>
+<li>
+<p>Filtrage URL</p>
+</li>
+<li>
+<p>Systeme :</p>
+<ul>
+<li>raid 1</li>
+<li>Double partion systeme (principale et secours)</li>
+<li>Haute disponibilité</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>stockage est natif dans l'ensemble des produits excepté pour les <code>SN160(w), SN210(w) et SN310</code>.</p>
+</blockquote>
+<h2 id="pack-sécurité">Pack Sécurité </h2>
+<p>les différents packs sont :</p>
+<ul>
+<li>
+<p>Remote Office Security Pack: Protection des petis sites distants, connecté par un tunnel VPN.</p>
+</li>
+<li>
+<p>UTM Security Pack : bénifice IPS unique de stormsheil Network Security + antispam ...</p>
+</li>
+<li>
+<p>Premium UTM Security Pack : entreprises exigeantes en matière de securité.</p>
+</li>
+<li>
+<p>Entreprise Security Pack: concentre sur les fonctionnalités Next-Genneration Firewall.</p>
+</li>
+</ul>
+<p>Après le choix d'un pack, on peut ajouter les services suivants:</p>
+<ul>
+<li>
+<p>Stormshield Network Vulnerability Manager</p>
+</li>
+<li>
+<p>Antivirus Avancé</p>
+</li>
+<li>
+<p>Filtrage Web Extended Web Control</p>
+</li>
+<li>
+<p>Stockage des log sur la carte SD</p>
+</li>
+<li>
+<p>Breach Fighter : Permet d'effectuer dans le Cloud une analyse complémentaire à celle de l'antivirus avanc", pour bloquer des attaques élaborées, avec le soutien d'une équipe de sécurité dédiée</p>
+</li>
+</ul>
+<h2 id="prise-en-main-du-firewall">Prise en main du firewall </h2>
+<p>il existe deux comptes sur <code>https://mystormshield.eu/</code> :</p>
+<ul>
+<li>
+<p>Compte client : permet d'enregistrer l'ensemble des produits Stormshield d'une meme entreprise.</p>
+</li>
+<li>
+<p>Compte partenaire: permet des gérer l'infogérence éventuelle de comptes clients.</p>
+</li>
+</ul>
+<blockquote>
+<p>L'infogérance1 est la prise en charge contractuelle, par un prestataire extérieur, d'une partie ou de la totalité des ressources informatiques d'une entreprise.</p>
+</blockquote>
+<p>sur le site on peut:</p>
+<ul>
+<li>télécharger les licences.</li>
+<li>Récupérer des fichiers de conf.<br>
+...</li>
+</ul>
+<p>pour le documentation : <code> https://documentation.stormshield.eu</code>.</p>
+<p>pour la knowledge base : <code> https://kb.stormshield.eu</code>.</p>
+<h2 id="les-composants-du-firewall-stormshield">Les composants du firewall StormShield </h2>
+<p><img src="image.png" alt="alt text"></p>
+<ul>
+<li>
+<p>Button démarage/arret</p>
+</li>
+<li>
+<p>Trois LED :</p>
+<ul>
+<li>orange : firewall sous tension</li>
+<li>verte : systeme d'exploitation du firewall est fonctionnel</li>
+<li>verte : firewall a fini de démarrer et qu'il est fonctionnel.</li>
+</ul>
+</li>
+<li>
+<p>Post clavier PS2 + VGA/HDMI</p>
+</li>
+</ul>
+<blockquote>
+<p>carte mémoire doit etre au minimum de class 10.</p>
+</blockquote>
+<p>Le démarage/arret du firewall se fais en cliquant sur le button de démarage/arret.</p>
+<p>Maintenir sur le button Rest pour 10s pour le reset.</p>
+<h2 id="configurer-le-firewall">Configurer le firewall </h2>
+<p><img src="image-1.png" alt="configuration du firewall"></p>
+<blockquote>
+<p>A partir de l'interface (0,0) aka top left, la premiere interface s'appelle OUT, le deuxieme IN, la troisieme DMZ1 -&gt; DMZn</p>
+</blockquote>
+<p>L'interface OUT est une inteface externe utilisé pour se connecté à l'internet.</p>
+<p>les autres sont internes et servent principalement à connecter le firewall à des réseau locaux.</p>
+<h3 id="le-bridging">le bridging: </h3>
+<p>Routing allows multiple networks to communicate independently and yet remain separate, whereas bridging connects two separate networks as if they were a single network.</p>
+<p><img src="image-2.png" alt=""></p>
+<blockquote>
+<p>le bridge à une adresse IP 10.0.0.254/8 + il contient un serveur DHCP, il distribue des adresse comprisent entre 10.0.0.10 - 10.0.0.100</p>
+</blockquote>
+<p>la connection vers l'interface graphique d'administrqtion est <code>https://10.0.0.254/admin</code></p>
+<p>par default :<br>
+- login : <strong>admin</strong><br>
+- password : <strong>admin</strong></p>
+<h2 id="linterface-dadministration">L'interface d'administration </h2>
+<p><img src="image-3.png" alt="Interface "></p>
+<h2 id="confirguration-système">Confirguration Système </h2>
+<p>Accessible par : CONFIGURATION -&gt; SYSTEME -&gt; Configuration.</p>
+<h3 id="configuration-générale">Configuration générale </h3>
+<ul>
+<li>Les paramètres cryptographiques regroupent deux options qui sont<br>
+respectivement en relation avec les certificats (présentés dans la formation<br>
+Expert) et le mode « ANSSI Diffusion Restreinte (DR) ».</li>
+</ul>
+<p>La politique de mots de passe définit la longueur minimale et les caractères<br>
+obligatoires des mots de passe créés dans les différents menus du firewall (par<br>
+exemple : mots de passe des utilisateurs dans l’aŶŶuaiƌe interne (LDAP), mots de<br>
+passe qui protègent les fichiers de sauvegarde, mots de passe des certificats créés<br>
+au niveau du firewall).</p>
+<h3 id="administration-du-firewall">Administration du firewall </h3>
+<ul>
+<li>
+<p>on peut modifier la certificat SSl de l'interface de configuration.</p>
+</li>
+<li>
+<p>on peut modifier le port par défaut (443/TCP).</p>
+</li>
+<li>
+<p>on peut configurer le delai max d'inactivité</p>
+</li>
+<li>
+<p>on peut activier la defence contre l'attaque bruteforce contre l'interface administrateur.</p>
+</li>
+<li>
+<p>on peut limité l'acces à l'interface d'administration à une machine ou un réseau spécifique.</p>
+</li>
+<li>
+<p>use the nsrpc shell for administrators other than the admin account : dans le cas ou on a un annuaire dans le réseau, on peut donner au utilisateurs le droits d'acces à la console en SSH.</p>
+</li>
+</ul>
+<h3 id="parametre-réseau">Parametre réseau </h3>
+<p>IPV6 est désactivé par défault, on cas d'activation seul un <code>reset</code> peut l'enlever.</p>
+<h2 id="modification-du-mot-de-passe-du-compte-admin">Modification du mot de passe du compte &lt;<admin>&gt; </admin></h2>
+<blockquote>
+<p>CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs, un minimum 5 caractère et doit respecter la politique de mot de passe définie dans le ,enu de CONFIGURATION</p>
+</blockquote>
+<p>les button exporter la clé publique et la clé privé du compte admin permettent de se conencter en SSH au firewall.</p>
+<h2 id="license">License </h2>
+<blockquote>
+<p>CONFIGURATION ⇒ SYSTÈME ⇒ Licence</p>
+</blockquote>
+<p>la license par défaut est valide pour 3 mois seulement.</p>
+<p>il faut installer une license depous l'espace privé StormShield.</p>
+<h2 id="maintenance">Maintenance </h2>
+<blockquote>
+<p>CONFIGURATION ⇒ SYSTÈME ⇒ Maintenance</p>
+</blockquote>
+<h3 id="1---mise-à-jour-le-système">1 - Mise à jour le système </h3>
+<p>il faut installer le ficher <code>.maj</code> / appuier sur recherche des nv maj</p>
+<p><img src="image-4.png" alt="maj ecrase ancien version "></p>
+<h3 id="2---sauvegarde">2 - Sauvegarde </h3>
+<p>récuperer un ficher de sauvegarde de l'état du firewall <code>.na</code>.</p>
+<p>les élements sauvegardé :</p>
+<ul>
+<li>Réseau (interface, routage et DNS dynamique),</li>
+<li>Filtrage SMTP,</li>
+<li>Filtrage URL,</li>
+<li>Filtrage SSL,</li>
+<li>Objets web,</li>
+<li>Modules globaux,</li>
+<li>Configuration sécurisée,</li>
+<li>Active Update,</li>
+<li>Services (SNMP, serveur DHCP),</li>
+<li>Profils d'inspection IPS,</li>
+<li>Objets réseaux,</li>
+<li>Filtrage et NAT,</li>
+<li>VPN IPSec,</li>
+<li>Annuaire LDAP.</li>
+</ul>
+<p>un sauvegarde partiel ne peux se faire qu'avec la ligne de commande.</p>
+<p>le fichier de sauvegarde peut etre securisé par un MDP.</p>
+<h4 id="sauvegarde-automatique">Sauvegarde automatique </h4>
+<ul>
+<li>
+<p>Cloud backup : géré par StormShield, le sauvegarde peut se faire chaque jour, chaque semaine, chaque mois</p>
+</li>
+<li>
+<p>Serveur Personnalisé :</p>
+<ul>
+<li>on peut configurer le port du serveur.</li>
+<li>le protocol de communication.</li>
+<li>Certificat de serveur.<br>
+...</li>
+</ul>
+</li>
+</ul>
+<h3 id="3---restaurer">3 - Restaurer </h3>
+<p>se fait avec le fichier <code>.na</code></p>
+<p>on peut réstaurer le tout ou les parties qui nous intéressent :</p>
+<blockquote>
+<p>configuration avancée =&gt; sélectioner le ou les modules nécessaires =&gt; redémarage du firewall</p>
+</blockquote>
+<p>on peut faire aussi le sauvegarde à partir de la dernière sauvegarde automatique dont la date est indiquée.</p>
+<h3 id="4---configuration">4 - Configuration </h3>
+<blockquote>
+<p>UTM:  Unified Threat Management, refers to a comprehensive security solution that integrates multiple security features and functions into a single platform.</p>
+</blockquote>
+<p><img src="image-5.png" alt="maintenance configuration"></p>
+<p>l'administrateur peut sélectionner la partition qui deviendra active au prochain<br>
+démarrage du firewall (principale ou de secours). Automatiquement l’autƌe partition<br>
+deviendra la partition passive.<br>
+Le bouton « sauvegarder la partition active » permet de copier tout le contenu de la<br>
+partition active (configuration + firmware) sur la partition passive.</p>
+<blockquote>
+<p>CONFIGURATION ⇒ SYSTÈME ⇒ Active Update</p>
+</blockquote>
+<p>permet le controle des mise a jour automatique des modules : Antispams, IPS, Antivirus...</p>
+<p>on peut aussi modifier les listes des serveurs de mise a jour. (configration avancée).</p>
+<p>le protocol utilisé pour la maj est soir HTTP ou HTTPs, en cas de l'HTTPS, il faut ajouter la CA du serveur pour pouvoir valider le certificat présenté.</p>
+<blockquote>
+<p>Serveur NTP : serveur de temps, network time protocol.</p>
+</blockquote>
+<p>le serveur SSH se fait avec le compte admin par défaut et peut étre octroyé a des administrateurs supplémentaire.</p>
+<h2 id="quiz">Quiz </h2>
+<p>Q1 - A<br>
+Q2 - A<br>
+Q3 - D</p>
+<h2 id="traces-et-supervision">Traces et supervision </h2>
+<h3 id="catégories-des-traces">Catégories des traces </h3>
+<ul>
+<li>Administration</li>
+<li>Authentification</li>
+<li>Connexions réseaux</li>
+<li>Evènements systèmes</li>
+<li>Alarmes : IPS + filtrage NAT</li>
+<li>Proxy HTTP :</li>
+<li>Connexion applicatives</li>
+<li>Proxy SMTP</li>
+<li>Politque de filtrage</li>
+<li>VPN IPSec</li>
+<li>VPN SSL</li>
+<li>Proxy POP3</li>
+<li>Statistiques</li>
+<li>Management de vulnérabilité</li>
+<li>Proxy FTP</li>
+<li>Proxy SSL</li>
+<li>Sandboxing :  refers to a security mechanism used in computing and software development to isolate programs, processes, or applications from the rest of the system.</li>
+</ul>
+<h3 id="configuration-et-visualisation-des-traces">Configuration et visualisation des traces </h3>
+<h4 id="configuration-du-stockage-local">Configuration du stockage local </h4>
+<blockquote>
+<p>CONFIGURATION ⇒ NOTIFICATIONS ⇒ Traces - Syslog - IPFIX ⇒ dans l’onglet STOCKAGE LOCAL .</p>
+</blockquote>
+<h4 id="visualisation-des-traces">Visualisation des traces </h4>
+<p>pour visualiser les traces :</p>
+<blockquote>
+<p>Le menu JOURNAUX D’AUDIT dans la section SUPERVISION</p>
+</blockquote>
+<h4 id="filtre-de-recherche-simple">Filtre de recherche simple </h4>
+<p>Un champ de recherche simple permet de filtrer les traces en recherchant une<br>
+chaîne de caractères dans toutes les colonnes de toutes les traces</p>
+<h4 id="recherche-avancé">Recherche avancé </h4>
+<p>La recherche avancée permet de créer des filtres complexes en combinant plusieurs<br>
+critères de sélection.</p>
+<p><img src="image-6.png" alt="alt text"></p>
+<h4 id="limiter-acces-aux-traces">Limiter Acces aux traces </h4>
+<p>l’accès<br>
+aux traces des firewalls SNS est restreint par défaut pour tous les administrateurs.</p>
+<p>Le super administrateur « admin », ainsi que les administrateurs disposant du droit<br>
+« Accès aux données personnelles » peuvent accéder aux traces complètes en<br>
+cliquant simplement sur Traces : accès restreint..</p>
+<h4 id="création-des-codes-daccès-temporaires-pour-un-accès-complet-au-traces">Création des codes d'accès temporaires pour un accès complet au traces </h4>
+<p>un administrateur n'ayant pas le droit &lt;&lt; Acces aux données personnelles &gt;&gt; peut avoir un accès complet, grâce à un code d'accès temporaire, généré par un autre administrateur ayant le droit &lt;&lt; Gestion des accès aux données personnelles &gt;&gt;</p>
+<blockquote>
+<p>La création d’un code d’accès temporaire s’effectue dans le menu CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs ⇒ onglet GESTION DES TICKETS</p>
+</blockquote>
+<h3 id="supervison-et-graphique-dhistoriques">Supervison et graphique d'historiques </h3>
+<h4 id="graphiques-et-données-en-temps-réel">Graphiques et données en temps réel </h4>
+<p>Le menu SUPERVISION permet de visualiser des graphiques et des données en temps<br>
+réel organisés en 12 sous-menus</p>
+<ul>
+<li>Matériel/Haute disponibilité : Température de la CPU..</li>
+<li>Système: Utilisation des ressources systèmes du firewall.</li>
+</ul>
+<p>...</p>
+<ul>
+<li>Tunnels IPSec VPN : Tunnels conformes à la politique du firewall,</li>
+<li>Liste noire/Liste blanche : Hôtes en quarantaine ou liste blanche sur le firewall.</li>
+</ul>
+<h4 id="consulter-les-graphique-dhistorique">Consulter les graphique d'historique </h4>
+<p>button doit etre ON dans</p>
+<blockquote>
+<blockquote>
+<p>CONFIGURATION ⇒ NOTIFICATIONS ⇒ Configuration des rapports.</p>
+</blockquote>
+</blockquote>
+<h4 id="configuration-de-la-supervision">Configuration de la supervision </h4>
+<blockquote>
+<blockquote>
+<p>CONFIGURATION ⇒ NOTIFICATIONS ⇒ Configuration de la supervision.</p>
+</blockquote>
+</blockquote>
+<p>par exemple :</p>
+<ul>
+<li>intervale de rafraichissement.</li>
+<li>Configuration des interfaces.</li>
+<li>Configuration de la QOS</li>
+</ul>
+<h3 id="notification-et-rapports-supplémentaire">Notification et Rapports Supplémentaire </h3>
+<ul>
+<li>
+<p>SYSLOG : Envoie de traces vers des serveurs SYSLOG (Jusqu'a 4 serveur + 1 serveur de secours pour chaqu'un d'entre eu).</p>
+</li>
+<li>
+<p>SLS (StormShield Log Supervisor) : Solution de gestion de traces (SIEM). Elle collecte et analyse les données qui provionne des firewalls.</p>
+</li>
+</ul>
+<blockquote>
+<p>SIEM : Security Information and Event Management</p>
+</blockquote>
+<ul>
+<li>
+<p>Notifications par mails</p>
+</li>
+<li>
+<p>Rapports</p>
+</li>
+</ul>
+<h3 id="lab----présentation-de-la-plateforme-de-lab">LAB -  Présentation de la plateforme de Lab </h3>
+<p><img src="image-7.png" alt="alt text"></p>
+<p><img src="image-8.png" alt="alt text"></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
