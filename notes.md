@@ -206,9 +206,15 @@ IPV6 est désactivé par défault, on cas d'activation seul un `reset` peut l'en
 
 ## Modification du mot de passe du compte <<admin>>
 
-> CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs, un minimum 5 caractère et doit respecter la politique de mot de passe définie dans le ,enu de CONFIGURATION
+> CONFIGURATION ⇒ SYSTÈME ⇒ Administrateurs => Administrator account, un minimum 5 caractère et doit respecter la politique de mot de passe définie dans le menu de CONFIGURATION
+
+
 
 les button exporter la clé publique et la clé privé du compte admin permettent de se conencter en SSH au firewall.
+
+il faut avant activer le ssh :
+
+>  CONFIGURATION ⇒ SYSTÈME ⇒ Configuration => ADMINISTRATION DU FIREWALL
 
 ## License
 
@@ -410,9 +416,58 @@ par exemple :
 ![alt text](image-8.png)
 
 
+### LAB - Prise en main du Firewall et traces
+
+1 - Connectez-vous à l’i'terface d’administration web (les firewalls « Trainee » sont
+en configuration usine).
+
+![alt text](image-9.png)
+
+2 - Modifiez vos préférences pour ne jamais être déconnecté en cas d'inactivité
+sur l’interface d'administration. Les préférences se trouvent dans le menu
+déroulant, accessible en cliquant sur la flèche à droite du nom d’utilisateur, en
+haut à droite de l’en-tête.
+
+![alt text](image-10.png)
+
+3 - Paramétrez la langue (traces et clavier) et le fuseau horaire de votre firewall.
+Redémarrez le firewall pour que le nouveau fuseau soit pris en compte (icône
+en haute à droite). Puis mettez votre firewall à l’heure après le redémarrage
 
 
+![alt text](image-12.png)
 
+4 - Activez le service SSH avec l'authentification par mot de passe
+
+
+![alt text](image-13.png)
+
+`ssh -i /home/user/Downloads/VMSNSX09K0639A9-privateKey admin@10.0.0.254`
+
+5 - Vérifiez la validité de votre licence et des éventuelles options disponibles,
+configurez la mise à jour automatique de votre licence avec une vérification
+hebdomadaire dans les options avancées
+
+![alt text](image-14.png)
+
+6 - Modifiez le mot de passe de l’utilisateur « admin » (il faut choisir un mot de
+passe d’au moins 8 caractères, sans caractère spécial). Rafraîchissez la page
+pour vous reconnecter et tester le nouveau mot de passe.
+
+![alt text](image-15.png)
+
+7 - Vérifiez que le stockage local des logs est activé sur le disque dur de la VM.
+Réallouez le quota d’espace disque de la catégorie « Proxy POP3 » à la
+catégorie « Connexions réseau », puis la désactiver. Activez tous les autres logs.
+
+![alt text](image-16.png)
+
+8 - Faites une sauvegarde de la configuration et téléchargez-la sur le poste
+d’administration. Prenez l’haďitude de sauvegarder la configuration à la fin de
+chaque lab
+
+
+![alt text](image-17.png)
  
 
 
